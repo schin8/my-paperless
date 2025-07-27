@@ -19,7 +19,7 @@ services:
       - paperless_consume:/usr/src/paperless/consume
       - paperless_export:/usr/src/paperless/export
     depends_on:
-      - redis
+      - paperless_redis
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/api/"]
       interval: 30s
@@ -27,9 +27,9 @@ services:
       retries: 3
       start_period: 60s
 
-  redis:
+  paperless_redis:
     image: redis:7
-    container_name: redis
+    container_name: paperless_redis
     restart: unless-stopped
     volumes:
       - paperless_redis_data:/data

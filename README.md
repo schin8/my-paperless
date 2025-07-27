@@ -21,7 +21,7 @@ A complete Docker Compose setup for Paperless-NGX document management system wit
    ```bash
    docker-compose --env-file paperless.env up -d
    ```
-5. Access Paperless at http://localhost:8000
+5. Access Paperless at http://localhost:7000
 
 ### Portainer Deployment
 1. Go to **Stacks** → **Add Stack**
@@ -94,5 +94,5 @@ The Paperless service includes a health check that monitors the API endpoint. In
 
 - **Service not starting**: Check logs with `docker-compose logs paperless`
 - **Database connection issues**: Run `./test-db-connection.sh`
-- **Health check failing**: Verify the service is accessible at http://localhost:8000/api/
+- **Health check failing**: Verify the service is accessible at http://localhost:7000/api/
 - **Remote DB issues**: Ensure firewall allows connections and credentials are correct

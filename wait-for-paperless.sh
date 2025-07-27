@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration
-PAPERLESS_URL="http://localhost:8000"
+PAPERLESS_URL="http://localhost:7000"
 HEALTH_ENDPOINT="/api/"
 MAX_ATTEMPTS=30
 WAIT_INTERVAL=10

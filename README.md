@@ -19,7 +19,7 @@ A complete Docker Compose setup for Paperless-NGX document management system wit
    ```
 4. Start services:
    ```bash
-   docker-compose up -d
+   docker-compose --env-file paperless.env up -d
    ```
 5. Access Paperless at http://localhost:8000
 
